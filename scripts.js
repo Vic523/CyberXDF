@@ -38,7 +38,61 @@ function onDietSelect() {
   }
   
   
+  async function analyzeDiet(selectedFoods) {
+    const prompt = `Analyze the following diet: ${selectedFoods.join(", ")}. Is the diet balanced?`;
   
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: "text-davinci-002",
+        prompt,
+        max_tokens: 100,
+        n: 1,
+        stop: null,
+        temperature: 1,
+      }),
+    };
+  
+    try {
+      const response = await fetch("https://api.openai.com/v1/engines/davinci-codex/completions", requestOptions);
+      const data = await response.json();
+      return data.choices[0].text.trim();
+    } catch (error) {
+      console.error("Error:", error);
+      return "Sorry, there was an error processing your request.";
+    }
+  }
+  
+  function setupAnalyzeButton() {
+    const analyzeButton = document.getElementById("analyze-button");
+    const chatbotResponseElement = document.getElementById("chatbot-response");
+  
+    if (analyzeButton && chatbotResponseElement) {
+      analyzeButton.addEventListener("click", async () => {
+        // Get the selected foods from the progress bars
+        const selectedFoods = Array.from(document.querySelectorAll(".progress-bar"))
+          .filter((progressBar) => progressBar.querySelector("progress").value > 0)
+          .map((progressBar) => progressBar.querySelector("label").textContent);
+  
+        // Get chatbot's response
+        const response = await analyzeDiet(selectedFoods);
+  
+        // Display the response
+        chatbotResponseElement.textContent = response;
+      });
+    }
+  }
+  
+  // Initialize the webpage
+  function init() {
+    onDietSelect();
+    setupAnalyzeButton();
+  }
+   
   // Initialize the webpage
   function init() {
     onDietSelect();
