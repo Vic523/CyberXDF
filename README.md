@@ -22,5 +22,6 @@ Due to the limited time of development, the functionality of CyberXDF has not ye
   <li>Presentation deck: https://docs.google.com/presentation/d/1Mlu0WsK5GmtwL-rg-0zC2EN8WjzqjcX1oG1QFsZeWqc/edit?usp=sharing</li>
   <li>GitHub repository: https://github.com/Vic523/CyberXDF</li>
   <li>Landing page: https://cyberxdf.squarespace.com</li>
+  <li>Prototype: https://www.figma.com/file/yIS2EAA89hL85YaDJWQji4/CyberXDF?type=design&node-id=0%3A1&t=oNOARCz0VU1dmuZJ-1</li>
   <li>Contact info: vic21thcntry@gmail.com (Vic Zhang)</li>
 </ul>
