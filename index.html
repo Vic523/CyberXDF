@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button id="plan-tab" class="tab active">Plan</button>
+      <button id="list-tab" class="tab">List</button>
+    </div>
+
+    <div id="plan-page" class="page active">
+      <select id="diet-plan">
+        <option value="muscle-gain">Muscle Gain</option>
+        <option value="regular">Regular</option>
+      </select>
+      <img id="muscle-gain-img" src="assets/muscle-gain.jpg" alt="Muscle Gain" style="display: block;">
+      <img id="regular-img" src="assets/regular.jpg" alt="Regular" style="display: none;">
+    </div>
+
+    <div id="list-page" class="page">
+      <div class="category-btns">
+        <button id="protein-btn" class="category-btn active">Protein</button>
+        <button id="carb-btn" class="category-btn">Carb</button>
+        <button id="vegetable-btn" class="category-btn">Vegetable</button>
+        <button id="fruit-btn" class="category-btn">Fruit</button>
+      </div>
+      <div class="category-pages">
+        <div id="protein-page" class="category-page active">
+          <div class="bar-container">
+            <div class="bar protein"></div>
+          </div>
+          <div class="selected-foods protein"></div>
+          <button class="add-custom-food-btn">+</button>
+        </div>
+        <div id="carb-page" class="category-page">
+          <div class="bar-container">
+            <div class="bar carb"></div>
+          </div>
+          <div class="selected-foods carb"></div>
+        </div>
+        <div id="vegetable-page" class="category-page">
+          <div class="bar-container">
+            <div class="bar vegetable"></div>
+          </div>
+          <div class="selected-foods vegetable"></div>
+        </div>
+        <div id="fruit-page" class="category-page">
+          <div class="bar-container">
+            <div class="bar fruit"></div>
+          </div>
+          <div class="selected-foods fruit"></div>
+        </div>
+      </div>
+
+      <button id="add-item-btn">+</button>
+      <div id="food-icons" style="display: none;">
+        <!-- Food icons will be generated here -->
+      </div>
+      <button id="close-icons-btn" style="display: none;">Close</button>
+      <!-- Add a div to hold the food icons for each category page -->
+      <div id="protein-icons" class="food-icons" style="display: none;"></div>
+      <div id="carb-icons" class="food-icons" style="display: none;"></div>
+      <div id="vegetable-icons" class="food-icons" style="display: none;"></div>
+      <div id="fruit-icons" class="food-icons" style="display: none;"></div>
+
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
