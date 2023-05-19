@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.main.data-v-28a51c9a {
+  padding: 48rpx;
+}
+text.data-v-28a51c9a {
+  font-weight: bold;
+}
+.shop_cart.data-v-28a51c9a {
+  width: 100%;
+  height: 1000rpx;
+  /* background-color: red; */
+  border: 1px solid #999;
+  border-radius: 40rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.add.data-v-28a51c9a {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  width: 180rpx;
+  border: 10px solid #6253bd;
+  border-radius: 80rpx;
+  text-align: center;
+  margin: auto;
+}
+.hint.data-v-28a51c9a {
+  margin-top: 60rpx;
+}
+.hint .title.data-v-28a51c9a {
+  text-align: center;
+  color: #999;
+}
+.hint .theme.data-v-28a51c9a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.hint .theme .Every_food.data-v-28a51c9a {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 33%;
+}
+.hint .theme .food_img.data-v-28a51c9a {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 40rpx;
+  display: flex;
+  border: 1px solid #999;
+  align-items: center;
+  justify-content: center;
+}
+.hint .theme .food_img image.data-v-28a51c9a {
+  width: 70rpx;
+  height: 70rpx;
+}
+.back.data-v-28a51c9a {
+  height: 120rpx;
+  width: 100%;
+  border-radius: 38rpx 38rpx 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.back1.data-v-28a51c9a {
+  background-image: linear-gradient(to right, #fb4c62 10%, #fd968c 20%, #fec8cf 30%, white 40%);
+}
+.back2.data-v-28a51c9a {
+  background-image: linear-gradient(to right, #ffb208 30%, #ffc749 40%, #fee8b3 50%, white 55%);
+}
+.back3.data-v-28a51c9a {
+  background-image: linear-gradient(to right, #49ee7b 60%, #79f39e 70%, #c7fad7 80%, white 90%);
+}
+.back4.data-v-28a51c9a {
+  background-image: linear-gradient(to right, #11bcb7 8%, #4fceca 12%, #b6ebe9 16%, white 20%);
+}
+.tab.data-v-28a51c9a {
+  width: 120rpx;
+  height: 60rpx;
+  background-color: #FFF;
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.active.data-v-28a51c9a {
+  background-color: #6253bd;
+}
+.detail.data-v-28a51c9a {
+  width: 540rpx;
+  height: 600rpx;
+  padding: 60rpx;
+  border-radius: 20rpx;
+  border: 3px solid #999;
+}
+.detail .title.data-v-28a51c9a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail .title image.data-v-28a51c9a {
+  width: 100rpx;
+  height: 100rpx;
+}
+.detail .title .name.data-v-28a51c9a {
+  padding: 10rpx;
+  width: 120rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 40rpx;
+}
+.detail .title .name1.data-v-28a51c9a {
+  background-color: #fb4c62;
+}
+.detail .title .name2.data-v-28a51c9a {
+  background-color: #ffb208;
+}
+.detail .title .name3.data-v-28a51c9a {
+  background-color: #49ee7b;
+}
+.detail .title .name4.data-v-28a51c9a {
+  background-color: #11bcb7;
+}
+.cut.data-v-28a51c9a {
+  width: 100%;
+  border-bottom: 3px solid #999;
+  padding-bottom: 10rpx;
+  margin: 30rpx 0;
+}
+.cut text.data-v-28a51c9a {
+  font-size: 60rpx;
+  color: #999;
+}
+.cut .cutactive.data-v-28a51c9a {
+  color: black;
+}
+.content.data-v-28a51c9a {
+  width: 95%;
+  height: 200rpx;
+  border: 1px solid #999;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .content_detail.data-v-28a51c9a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+  color: #6a6a6a;
+}
+.footer.data-v-28a51c9a {
+  padding: 50rpx 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer text.data-v-28a51c9a {
+  width: 5rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  background-color: #999;
+}
+
