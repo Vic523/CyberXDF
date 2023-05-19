@@ -42,7 +42,7 @@
 			        <view class="detail">
 			        	<view class="title">
 			        		<image :src="detailImg" mode=""></image>
-							<view :class="active == 0 ? 'name name1' :( active == 1 ? 'name name2' :(active == 2 ? 'name name3' : 'name name4' )) ">Fruit</view>
+							<view :class="active == 0 ? 'name name1' :( active == 1 ? 'name name2' :(active == 2 ? 'name name3' : 'name name4' )) ">{{active == 0 ? 'Protein' :( active == 1 ? 'Carb' :(active == 2 ? 'Veggie' : 'Fruit' ))}}</view>
 			        	</view>
 						<view class="cut">
 							<text @tap="cut=true" :class= "cut ? 'cutactive' : ''">{{cut ? detailName :'Type to add' }}</text>

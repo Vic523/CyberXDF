@@ -1,5 +1,5 @@
 # CyberXDF
-![](/img/tile.png)
+![](/tile.png)
 ## About
 CyberXDF is a shopping list application designed for college students who just start independent living. It serves as an efficient and educational tool for young students to become more engaged and informed about their grocery shopping plan. From selecting diet plans to filling nutrition bars, users go through every grocery trip with fun and learn to cultivate balanced diets bit by bit on their phones.
 
